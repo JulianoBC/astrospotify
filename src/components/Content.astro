@@ -1,0 +1,54 @@
+---
+import { Home as HomeIcon, Search, Library, ChevronLeft } from "lucide-react";
+---
+
+<divv class="h-screen flex flex-col">
+  <div class="flex flex-1">
+    <aside class="w-72 bg-zinc-950 p-6">
+      <div class="flex items-center gap-2">
+        <div class="balls bg-red-500"></div>
+        <div class="balls bg-yellow-500"></div>
+        <div class="balls bg-green-500"></div>
+      </div>
+
+      <nav class="space-y-5 mt-10">
+        <a href="" class="side-bar"><HomeIcon />Home</a>
+        <a href="" class="side-bar"><Search />Search</a>
+        <a href="" class="side-bar"><Library />Your Library</a>
+      </nav>
+
+      <nav class="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
+        <a class="playlist"href="">Hot Hits Brasil</a>
+        <a class="playlist"href="">Aniver Funk</a>
+        <a class="playlist"href="">My Playlist #13</a>
+		<a class="playlist"href="">Top Brasil</a>
+      </nav>
+    </aside>
+    <main class="flex-1 p-6">main
+		<div class="flex items-center gap-3">
+			<button>
+				<ChevronLeft />
+			</button>
+		</div>
+	</main>
+  </div>
+  <footer class="bg-zinc-800 border-t border-zinc-700 p-6">footer</footer>
+</divv>
+
+<style is:global>
+  
+  @import "tailwindcss/base";
+  @import "tailwindcss/components";
+  @import "tailwindcss/utilities";
+
+  .playlist {
+	@apply text-sm text-zinc-400 hover:text-zinc-100
+  }
+  .balls {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  .side-bar {
+    @apply flex items-center gap-3 text-sm font-semibold text-zinc-200;
+  }
+</style>
