@@ -1,0 +1,73 @@
+---
+import {
+  Home as HomeIcon,
+  Search,
+  Library,
+  ChevronLeft,
+  ChevronRight,
+  Play as Playb,
+  Shuffle,
+  SkipBack,
+  SkipForward,
+  Repeat,
+  Mic2,
+  LayoutList,
+  Volume,
+  Laptop2,
+  Maximize2,
+} from "lucide-react";
+---
+
+<footer
+    class="bg-zinc-900 border-t border-zinc-700 px-6 py-4 flex items-center justify-between"
+  >
+    <div class="flex items-center gap-3">
+      <img
+        class=""
+        width={56}
+        height={56}
+        src="/Capa_de_Bang.jpg"
+        alt="Capa do álbum Bang da artista Anitta"
+      />
+      <div class="flex flex-col">
+        <strong class="font-normal text-white">Bang</strong>
+        <span class="text-xs text-zinc-400"> Bang Bang</span>
+      </div>
+    </div>
+    <div class="flex flex-col items-center gap-2">
+      <div class="flex items-center gap-6">
+        <Shuffle size={20} className="text-zinc-200" />
+        <SkipBack size={20} className="text-zinc-200" />
+
+        <button
+          class="h-10 w-10 flex items-center justify-center pl-1 rounded-full bg-white"
+        >
+          <Playb />
+        </button>
+
+        <SkipForward size={20} className="text-zinc-200" />
+        <Repeat size={20} className="text-zinc-300" />
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-xs text-zinc-400">0:31</span>
+        <div class="h-1 rounded-full w-96 bg-zinc-600">
+          <div class="bg-zinc-100 w-40 h-1 rounded-full"></div>
+        </div>
+        <span class="text-xs text-zinc-400">2:31</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 text-zinc-400">
+      <Mic2 size={20} />
+      <LayoutList size={20} />
+      <Laptop2 size={20} />
+      <div class="flex items-center gap-2">
+        <Volume size={20} />
+        <span class="text-xs text-zinc-400">0:31</span>
+        <div class="h-1 rounded-full w-24 bg-zinc-600">
+          <div class="bg-zinc-100 w-10 h-1 rounded-full"></div>
+        </div>
+        <span class="text-xs text-zinc-400">2:31</span>
+      </div>
+      <Maximize2 size={20} />
+    </div>
+  </footer>

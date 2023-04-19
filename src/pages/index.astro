@@ -1,13 +1,71 @@
 ---
 import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
 import Content from "../components/Content.astro";
 import Layout from "../layouts/src/Layout.astro";
+import Sidebar from "../components/Sidebar.astro";
 ---
-<Layout>
-	<Content />
-	<Footer />
+
+<Layout class="h-screen flex flex-col">
+  <div class="flex flex-1">
+  <Sidebar />
+  <Content />
+  </div>
+  <Footer />
 </Layout>
 
 
-<style></style>
+<style is:global>
+  @import "tailwindcss/base";
+  @import "tailwindcss/components";
+  @import "tailwindcss/utilities";
+
+  .buttonplay {
+    @apply w-12 h-12 flex items-center justify-center pl-4 rounded-full bg-green-400 p-2  text-black ml-auto mr-8 invisible group-hover:visible;
+  }
+  .playlistmain {
+    @apply bg-zinc-300 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20
+transition-colors;
+  }
+  .button {
+    @apply rounded-full bg-black/30 p-2;
+  }
+  .playlist {
+    @apply text-sm text-zinc-400 hover:text-zinc-100;
+  }
+  .balls {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  .side-bar {
+    @apply flex items-center gap-3 text-sm font-semibold text-zinc-200;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .main {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+
+  /* --------- Non-flexbox related styles --------- */
+  .child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffe8c3;
+    background-color: #eab768;
+    border-radius: 10px;
+    border: 10px solid #f5cc8b;
+  }
+</style>

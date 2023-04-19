@@ -1,48 +1,199 @@
 ---
-import { Home as HomeIcon, Search, Library, ChevronLeft } from "lucide-react";
+import {
+  Home as HomeIcon,
+  Search,
+  Library,
+  ChevronLeft,
+  ChevronRight,
+  Play as Playb,
+  Shuffle,
+  SkipBack,
+  SkipForward,
+  Repeat,
+  Mic2,
+  LayoutList,
+  Volume,
+  Laptop2,
+  Maximize2,
+} from "lucide-react";
 ---
 
-<divv class="h-screen flex flex-col">
+<content class="w-screen flex flex-col">
   <div class="flex flex-1">
-    <aside class="w-72 bg-zinc-950 p-6">
-      <div class="flex items-center gap-2">
-        <div class="balls bg-red-500"></div>
-        <div class="balls bg-yellow-500"></div>
-        <div class="balls bg-green-500"></div>
+    <main class="flex-1 p-6 bg-zinc-800">
+      <div class="flex items-center gap-4">
+        <button class="button">
+          <ChevronLeft />
+        </button>
+        <button class="button">
+          <ChevronRight />
+        </button>
       </div>
 
-      <nav class="space-y-5 mt-10">
-        <a href="" class="side-bar"><HomeIcon />Home</a>
-        <a href="" class="side-bar"><Search />Search</a>
-        <a href="" class="side-bar"><Library />Your Library</a>
-      </nav>
+      <h1 class="font-semibold text-3xl mt-10 text-white">Good Afternoon</h1>
 
-      <nav class="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
-        <a class="playlist"href="">Hot Hits Brasil</a>
-        <a class="playlist"href="">Aniver Funk</a>
-        <a class="playlist"href="">My Playlist #13</a>
-		<a class="playlist"href="">Top Brasil</a>
-      </nav>
-    </aside>
-    <main class="flex-1 p-6">main
-		<div class="flex items-center gap-3">
-			<button>
-				<ChevronLeft />
-			</button>
-		</div>
-	</main>
+      <div class="grid grid-cols-3 gap-6 mt-4">
+        <a href="" class="playlistmain group"
+          ><img
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          /><strong>Bang - Anitta</strong>
+          <button class="buttonplay">
+            <Playb />
+          </button></a
+        >
+
+        <a href="" class="playlistmain group"
+          ><img
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          /><strong>Bang - Anitta</strong><button class="buttonplay">
+            <Playb />
+          </button></a
+        >
+
+        <a href="" class="playlistmain group"
+          ><img
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          /><strong>Bang - Anitta</strong><button class="buttonplay">
+            <Playb />
+          </button></a
+        >
+
+        <a href="" class="playlistmain group"
+          ><img
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          /><strong>Bang - Anitta</strong><button class="buttonplay">
+            <Playb />
+          </button></a
+        ><a href="" class="playlistmain group"
+          ><img
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          /><strong>Bang - Anitta</strong><button class="buttonplay">
+            <Playb />
+          </button></a
+        ><a href="" class="playlistmain group"
+          ><img
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          /><strong>Bang - Anitta</strong><button class="buttonplay">
+            <Playb />
+          </button></a
+        >
+      </div>
+
+      <h2 class="font-semibold text-2xl mt-10 text-white">
+        Made for Juliano Capretz
+      </h2>
+
+      <div class="grid grid-cols-8 gap-4 mt-4">
+        <a class="bg-white/5 p-3 rounded flex flex-col gap-2 hover:bg-white/10">
+          <img
+            class="w-full"
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          />
+          <strong class="font-semibold"> Daily Mix 1</strong>
+          <span class="text-sm text-zinc-500">
+            Wallows, Coin , girl in red</span
+          ></a
+        ><a
+          class="bg-white/5 p-3 rounded flex flex-col gap-2 hover:bg-white/10"
+        >
+          <img
+            class="w-full"
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          />
+          <strong class="font-semibold"> Daily Mix 1</strong>
+          <span class="text-sm text-zinc-500">
+            Wallows, Coin , girl in red</span
+          ></a
+        ><a
+          class="bg-white/5 p-3 rounded flex flex-col gap-2 hover:bg-white/10"
+        >
+          <img
+            class="w-full"
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          />
+          <strong class="font-semibold"> Daily Mix 1</strong>
+          <span class="text-sm text-zinc-500">
+            Wallows, Coin , girl in red</span
+          ></a
+        ><a
+          class="bg-white/5 p-3 rounded flex flex-col gap-2 hover:bg-white/10"
+        >
+          <img
+            class="w-full"
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          />
+          <strong class="font-semibold"> Daily Mix 1</strong>
+          <span class="text-sm text-zinc-500">
+            Wallows, Coin , girl in red</span
+          ></a
+        ><a
+          class="bg-white/5 p-3 rounded flex flex-col gap-2 hover:bg-white/10"
+        >
+          <img
+            class="w-full"
+            width={104}
+            height={104}
+            src="/Capa_de_Bang.jpg"
+            alt="Capa do álbum Bang da artista Anitta"
+          />
+          <strong class="font-semibold"> Daily Mix 1</strong>
+          <span class="text-sm text-zinc-500">
+            Wallows, Coin , girl in red</span
+          ></a
+        >
+      </div>
+    </main>
   </div>
-  <footer class="bg-zinc-800 border-t border-zinc-700 p-6">footer</footer>
-</divv>
+  
+</content>
 
 <style is:global>
-  
   @import "tailwindcss/base";
   @import "tailwindcss/components";
   @import "tailwindcss/utilities";
 
+  .buttonplay {
+    @apply w-12 h-12 flex items-center justify-center pl-4 rounded-full bg-green-400 p-2  text-black ml-auto mr-8 invisible group-hover:visible;
+  }
+  .playlistmain {
+    @apply bg-zinc-300 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20
+transition-colors;
+  }
+  .button {
+    @apply rounded-full bg-black/30 p-2;
+  }
   .playlist {
-	@apply text-sm text-zinc-400 hover:text-zinc-100
+    @apply text-sm text-zinc-400 hover:text-zinc-100;
   }
   .balls {
     @apply w-3 h-3 rounded-full;
@@ -50,5 +201,34 @@ import { Home as HomeIcon, Search, Library, ChevronLeft } from "lucide-react";
 
   .side-bar {
     @apply flex items-center gap-3 text-sm font-semibold text-zinc-200;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .main {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+
+  /* --------- Non-flexbox related styles --------- */
+  .child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffe8c3;
+    background-color: #eab768;
+    border-radius: 10px;
+    border: 10px solid #f5cc8b;
   }
 </style>
