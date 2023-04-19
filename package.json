@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/react": "^2.1.1",
     "@astrojs/tailwind": "^3.1.1",
+    "@astrojs/vercel": "^3.2.4",
     "astro": "^2.3.0",
     "astro-auto-import": "^0.2.1",
     "lucide": "^0.161.0",
